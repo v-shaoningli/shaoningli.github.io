@@ -13,7 +13,7 @@ import {
 } from '@chakra-ui/react'
 import { ChevronRightIcon, EmailIcon } from '@chakra-ui/icons'
 import Paragraph from '../components/paragraph'
-import { BioSection, BioYear } from '../components/bio'
+import { BioSection, BioYear, PubSection } from '../components/bio'
 import Layout from '../components/layouts/article'
 import Section from '../components/section'
 import { GridItem } from '../components/grid-item'
@@ -29,7 +29,7 @@ const ProfileImage = chakra(Image, {
 const Home = () => (
   <Layout>
     <Container>
-      <Box
+      {/* <Box
         borderRadius="lg"
         mb={6}
         p={3}
@@ -37,19 +37,77 @@ const Home = () => (
         bg={useColorModeValue('whiteAlpha.500', 'whiteAlpha.200')}
         css={{ backdropFilter: 'blur(10px)' }}
       >
-        Hello, I&apos;m an indie app developer based in Japan!
-      </Box>
+        Hi, I&apos;m a PhD student in Mila!
+      </Box> */}
 
       <Box display={{ md: 'flex' }}>
-        <Box flexGrow={1}>
-          <Heading as="h2" variant="page-title">
-            Takuya Matsuyama
+        <Box flexGrow={1} letterSpacing='wide' mt='1'>
+          <Heading as='h2' size='2xl' variant="page-title">
+            Shaoning Li
           </Heading>
-          <p>Digital Craftsman ( Artist / Developer / Designer )</p>
+          
+            <Box mt="3.5">
+            I would start my first-year PhD student at {' '}
+            <Link
+              as={NextLink}
+              href="https://mila.quebec/"
+              passHref
+              target="_blank"
+            >
+              Montreal Institute for Learning Algorithms (Mila)
+            </Link>
+            {' '} supervised by Prof. {' '}
+            <Link
+              as={NextLink}
+              href="https://jian-tang.com/"
+              passHref
+              target="_blank"
+            >
+              Jian Tang
+            </Link>
+            . Before that, I received my B.S.  
+            from {' '}
+            <Link
+              as={NextLink}
+              href="https://ev.buaa.edu.cn/"
+              passHref
+              target="_blank"
+            >
+              Beihang University
+            </Link>
+            , advised by Prof. {' '}
+            <Link
+              as={NextLink}
+              href="https://penghao-bdsc.github.io/"
+              passHref
+              target="_blank"
+            >
+              Hao Peng
+            </Link>
+            . Concurrently, I am a research intern at {' '}
+            <Link
+              as={NextLink}
+              href="https://www.microsoft.com/en-us/research/lab/microsoft-research-ai4science/"
+              passHref
+              target="_blank"
+            >
+              Microsoft Research AI4Science
+            </Link>
+            {' '} supervised by Dr. {' '}
+            <Link
+              as={NextLink}
+              href="https://www.microsoft.com/en-us/research/people/watong/"
+              passHref
+              target="_blank"
+            >
+              Tong Wang
+            </Link>
+            .
+            </Box>
         </Box>
         <Box
           flexShrink={0}
-          mt={{ base: 4, md: 0 }}
+          mt={{ base: 4, md: 4 }}
           ml={{ md: 6 }}
           textAlign="center"
         >
@@ -57,48 +115,70 @@ const Home = () => (
             borderColor="whiteAlpha.800"
             borderWidth={2}
             borderStyle="solid"
-            w="100px"
-            h="100px"
+            w="180px"
+            h="200px"
             display="inline-block"
             borderRadius="full"
             overflow="hidden"
           >
             <ProfileImage
-              src="/images/takuya.jpg"
+              src="/images/lisn.jpeg"
               alt="Profile image"
               borderRadius="full"
-              width="100"
-              height="100"
+              width="180"
+              height="210"
             />
           </Box>
         </Box>
       </Box>
 
+
       <Section delay={0.1}>
         <Heading as="h3" variant="section-title">
-          Work
+          Bio
+        </Heading>
+        <BioSection>
+          <BioYear>2019.8 - 2023.6</BioYear>
+          Cyber Science and Technology, Beihang University
+        </BioSection>
+        <BioSection>
+          <BioYear>2022.2 - 2023.6</BioYear>
+          Research Intern, Microsoft Research AI4Science
+        </BioSection>
+      </Section>
+
+
+      <Section delay={0.2}>
+        <Heading as="h3" variant="section-title">
+          Publications
         </Heading>
         <Paragraph>
-          Takuya is a freelance and a full-stack developer based in Osaka with a
-          passion for building digital services/stuff he wants. He has a knack
-          for all things launching products, from planning and designing all the
-          way to solving real-life problems with code. When not online, he loves
-          hanging out with his camera. Currently, he is living off of his own
-          product called{' '}
-          <Link as={NextLink} href="/works/inkdrop" passHref scroll={false}>
-            Inkdrop
-          </Link>
-          . He publishes content for marketing his products and his YouTube
-          channel called &quot;
+          <PubSection>
           <Link
-            as={NextLink}
-            href="https://www.youtube.com/devaslife"
-            passHref
-            target="_blank"
-          >
-            Dev as Life
-          </Link>
-          &quot; has more than 100k subscribers.
+              as={NextLink}
+              href="https://arxiv.org/abs/2210.16518"
+              passHref
+              target="_blank"
+            >
+              ViSNet: a scalable and accurate geometric deep learning potential for molecular dynamics simulation.
+            </Link>
+          </PubSection>
+          Yusong Wang*, <b>Shaoning Li*</b>, Xinheng He, Mingyu Li, Zun Wang, Nanning Zheng, Bin Shao, Tong Wang, Tie-Yan Liu
+
+          <PubSection>
+          <Link
+              as={NextLink}
+              href="https://ieeexplore.ieee.org/abstract/document/9693189/"
+              passHref
+              target="_blank"
+            >
+              Reinforced, Incremental and Cross-lingual Event Detection 
+              From Social Messages.
+            </Link>
+          </PubSection>
+          Hao Peng, Ruitong Zhang, <b>Shaoning Li</b>, Yuwei Cao, Shirui Pan, Philip Yu.
+          <br />
+          IEEE Transactions on Pattern Analysis and Machine Intelligence <b>(TPAMI 2022)</b>.
         </Paragraph>
         <Box align="center" my={4}>
           <Button
@@ -113,46 +193,6 @@ const Home = () => (
         </Box>
       </Section>
 
-      <Section delay={0.2}>
-        <Heading as="h3" variant="section-title">
-          Bio
-        </Heading>
-        <BioSection>
-          <BioYear>1984</BioYear>
-          Born in Osaka (大阪), Japan.
-        </BioSection>
-        <BioSection>
-          <BioYear>2010</BioYear>
-          Completed the Master&apos;s Program in the Graduate School of
-          Information Science at Nara Institute of Science and Technology
-          (奈良先端科学技術大学院大学情報科学研究科修士課程)
-        </BioSection>
-        <BioSection>
-          <BioYear>2010</BioYear>
-          Worked at Yahoo! Japan (ヤフー株式会社入社)
-        </BioSection>
-        <BioSection>
-          <BioYear>2012 to present</BioYear>
-          Working as a freelancer
-        </BioSection>
-      </Section>
-
-      <Section delay={0.3}>
-        <Heading as="h3" variant="section-title">
-          I ♥
-        </Heading>
-        <Paragraph>
-          Art, Music,{' '}
-          <Link href="https://illust.odoruinu.net/" target="_blank">
-            Drawing
-          </Link>
-          , Playing Drums,{' '}
-          <Link href="https://500px.com/p/craftzdog" target="_blank">
-            Photography
-          </Link>
-          , Leica, Machine Learning
-        </Paragraph>
-      </Section>
 
       <Section delay={0.3}>
         <Heading as="h3" variant="section-title">
@@ -160,87 +200,21 @@ const Home = () => (
         </Heading>
         <List>
           <ListItem>
-            <Link href="https://github.com/craftzdog" target="_blank">
+            <Link href="https://github.com/v-shaoningli" target="_blank">
               <Button
                 variant="ghost"
                 colorScheme="teal"
                 leftIcon={<IoLogoGithub />}
               >
-                @craftzdog
-              </Button>
-            </Link>
-          </ListItem>
-          <ListItem>
-            <Link href="https://twitter.com/inkdrop_app" target="_blank">
-              <Button
-                variant="ghost"
-                colorScheme="teal"
-                leftIcon={<IoLogoTwitter />}
-              >
-                @inkdrop_app (English)
-              </Button>
-            </Link>
-          </ListItem>
-          <ListItem>
-            <Link href="https://twitter.com/craftzdog" target="_blank">
-              <Button
-                variant="ghost"
-                colorScheme="teal"
-                leftIcon={<IoLogoTwitter />}
-              >
-                @craftzdog (日本語)
-              </Button>
-            </Link>
-          </ListItem>
-          <ListItem>
-            <Link href="https://instagram.com/craftzdog" target="_blank">
-              <Button
-                variant="ghost"
-                colorScheme="teal"
-                leftIcon={<IoLogoInstagram />}
-              >
-                @craftzdog
+                @v-shaoningli
               </Button>
             </Link>
           </ListItem>
         </List>
 
-        <SimpleGrid columns={[1, 2, 2]} gap={6}>
-          <GridItem
-            href="https://www.youtube.com/devaslife"
-            title="Dev as Life"
-            thumbnail={thumbYouTube}
-          >
-            My YouTube channel (&gt;150k subs)
-          </GridItem>
-          <GridItem
-            href="https://www.inkdrop.app/"
-            title="Inkdrop"
-            thumbnail={thumbInkdrop}
-          >
-            A Markdown note-taking app
-          </GridItem>
-        </SimpleGrid>
+        
 
-        <Heading as="h3" variant="section-title">
-          Newsletter
-        </Heading>
-        <p>
-          Join me on a behind-the-scenes coding journey. Weekly updates on
-          projects, tutorials, and videos
-        </p>
-
-        <Box align="center" my={4}>
-          <Button
-            as={NextLink}
-            href="https://www.devas.life/"
-            scroll={false}
-            leftIcon={<EmailIcon />}
-            colorScheme="teal"
-          >
-            Sign up my newsletter here
-          </Button>
-        </Box>
+        
       </Section>
     </Container>
   </Layout>
