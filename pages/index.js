@@ -84,7 +84,7 @@ const Home = () => (
             >
               Hao Peng
             </Link>
-            . Concurrently, I am a research intern at {' '}
+            . Concurrently, I was a research intern at {' '}
             <Link
               as={NextLink}
               href="https://www.microsoft.com/en-us/research/lab/microsoft-research-ai4science/"
