@@ -84,7 +84,7 @@ const Home = () => (
             >
               Hao Peng
             </Link>
-            . Concurrently, I am a research intern at {' '}
+            . Concurrently, I was a research intern at {' '}
             <Link
               as={NextLink}
               href="https://www.microsoft.com/en-us/research/lab/microsoft-research-ai4science/"
@@ -152,7 +152,6 @@ const Home = () => (
         <Heading as="h3" variant="section-title">
           Publications
         </Heading>
-        <Paragraph>
           <PubSection>
           <Link
               as={NextLink}
@@ -164,7 +163,6 @@ const Home = () => (
             </Link>
           </PubSection>
           Yusong Wang*, <b>Shaoning Li*</b>, Xinheng He, Mingyu Li, Zun Wang, Nanning Zheng, Bin Shao, Tong Wang, Tie-Yan Liu
-
           <PubSection>
           <Link
               as={NextLink}
@@ -179,7 +177,6 @@ const Home = () => (
           Hao Peng, Ruitong Zhang, <b>Shaoning Li</b>, Yuwei Cao, Shirui Pan, Philip Yu.
           <br />
           IEEE Transactions on Pattern Analysis and Machine Intelligence <b>(TPAMI 2022)</b>.
-        </Paragraph>
         <Box align="center" my={4}>
           <Button
             as={NextLink}
@@ -188,7 +185,7 @@ const Home = () => (
             rightIcon={<ChevronRightIcon />}
             colorScheme="teal"
           >
-            My portfolio
+            Full Publications
           </Button>
         </Box>
       </Section>
