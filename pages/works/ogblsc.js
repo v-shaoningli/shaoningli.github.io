@@ -33,6 +33,12 @@ import {
             https://github.com/microsoft/ViSNet <ExternalLinkIcon mx="2px" />
             </Link>
           </ListItem>
+          <ListItem>
+            <Meta>Tech Report</Meta>
+            <Link href="https://arxiv.org/abs/2211.12791">
+            https://arxiv.org/abs/2211.12791 <ExternalLinkIcon mx="2px" />
+            </Link>
+          </ListItem>
         </List>
   
         <WorkImage src="/images/works/ogb_member.jpg" alt="ogblsc" />
