@@ -17,7 +17,7 @@ import { BioSection, BioYear, PubSection } from '../components/bio'
 import Layout from '../components/layouts/article'
 import Section from '../components/section'
 // import { GridItem } from '../components/grid-item'
-import { IoLogoGithub } from 'react-icons/io5' // IoLogoTwitter, IoLogoInstagram
+import { IoLogoGithub, IoLogoGoogle } from 'react-icons/io5' // IoLogoTwitter, IoLogoInstagram
 // import thumbYouTube from '../public/images/links/youtube.png'
 // import thumbInkdrop from '../public/images/works/inkdrop_eyecatch.png'
 import Image from 'next/image'
@@ -190,6 +190,36 @@ const Home = () => (
         </Box>
       </Section>
 
+      <Section delay={0.3}>
+        <Heading as="h3" variant="section-title">
+          Competitions
+        </Heading>
+        <PubSection>
+          Winners of {' '}
+          <Link
+              as={NextLink}
+              href="https://arxiv.org/abs/2210.16518"
+              passHref
+              target="_blank"
+            >
+              OGB-LSC@NeurIPS2022
+            </Link>
+            {' '} PCQM4Mv2 Graph Regression Track.
+        </PubSection>
+        <PubSection>
+          Winners of {' '}
+          <Link
+              as={NextLink}
+              href="https://opencatalystproject.org/challenge.html"
+              passHref
+              target="_blank"
+            >
+              Open Catalyst Project@NeurIPS2022
+            </Link>
+            {' '} Initial Structure to Relaxed Energy (IS2RE) Task.
+        </PubSection>
+        </Section>
+
 
       <Section delay={0.3}>
         <Heading as="h3" variant="section-title">
@@ -204,6 +234,17 @@ const Home = () => (
                 leftIcon={<IoLogoGithub />}
               >
                 @v-shaoningli
+              </Button>
+            </Link>
+          </ListItem>
+          <ListItem>
+            <Link href="https://scholar.google.com/citations?user=aOdgeXEAAAAJ&hl=zh-CN" target="_blank">
+              <Button
+                variant="ghost"
+                colorScheme="teal"
+                leftIcon={<IoLogoGoogle />}
+              >
+                Google Scholar
               </Button>
             </Link>
           </ListItem>
