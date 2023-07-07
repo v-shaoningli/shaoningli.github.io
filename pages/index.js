@@ -150,7 +150,7 @@ const Home = () => (
 
       <Section delay={0.2}>
         <Heading as="h3" variant="section-title">
-          Publications
+          Selected Publications
         </Heading>
           <PubSection>
           <Link
@@ -162,7 +162,8 @@ const Home = () => (
               ViSNet: a scalable and accurate geometric deep learning potential for molecular dynamics simulation.
             </Link>
           </PubSection>
-          Yusong Wang*, <b>Shaoning Li*</b>, Xinheng He, Mingyu Li, Zun Wang, Nanning Zheng, Bin Shao, Tong Wang, Tie-Yan Liu
+          Yusong Wang*, <b>Shaoning Li*</b>, Xinheng He, Mingyu Li, Zun Wang, Nanning Zheng, Bin Shao, Tong Wang, Tie-Yan Liu.
+          (* equal contribution)
           <PubSection>
           <Link
               as={NextLink}
@@ -177,17 +178,6 @@ const Home = () => (
           Hao Peng, Ruitong Zhang, <b>Shaoning Li</b>, Yuwei Cao, Shirui Pan, Philip Yu.
           <br />
           IEEE Transactions on Pattern Analysis and Machine Intelligence <b>(TPAMI 2022)</b>.
-        <Box align="center" my={4}>
-          <Button
-            as={NextLink}
-            href="/works"
-            scroll={false}
-            rightIcon={<ChevronRightIcon />}
-            colorScheme="teal"
-          >
-            Full Publications
-          </Button>
-        </Box>
       </Section>
 
       <Section delay={0.3}>
@@ -218,6 +208,17 @@ const Home = () => (
             </Link>
             {' '} Initial Structure to Relaxed Energy (IS2RE) Task.
         </PubSection>
+        <Box align="center" my={4}>
+          <Button
+            as={NextLink}
+            href="/works"
+            scroll={false}
+            rightIcon={<ChevronRightIcon />}
+            colorScheme="teal"
+          >
+            Full Works
+          </Button>
+        </Box>
         </Section>
 
 
