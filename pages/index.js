@@ -152,6 +152,17 @@ const Home = () => (
         <Heading as="h3" variant="section-title">
           Selected Publications
         </Heading>
+        <PubSection>
+          <Link
+              as={NextLink}
+              href="https://www.biorxiv.org/content/10.1101/2023.07.12.548519v1"
+              passHref
+              target="_blank"
+            >
+              AI2BMD: efficient characterization of protein dynamics with ab initio accuracy.
+            </Link>
+          </PubSection>
+          Tong Wang*, Xinheng He*, Mingyu Li*, Yusong Wang*, Zun Wang, <b>Shaoning Li</b>, Bin Shao, Tie-Yan Liu
           <PubSection>
           <Link
               as={NextLink}
