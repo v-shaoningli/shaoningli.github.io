@@ -196,6 +196,27 @@ const Home = () => (
           Competitions
         </Heading>
         <PubSection>
+          First Prize of {' '}
+          <Link
+              as={NextLink}
+              href="https://aistudio.baidu.com/competition/detail/1012/0/introduction"
+              passHref
+              target="_blank"
+            >
+              The First Global AI Drug Development Competition
+            </Link>
+            . [
+            <Link
+              as={NextLink}
+              href="https://mp.weixin.qq.com/s/pOWmZIZiTc7NC5qCehu8hQ"
+              passHref
+              target="_blank"
+            >
+              Blog
+            </Link>
+            ]
+        </PubSection>
+        <PubSection>
           Winners of {' '}
           <Link
               as={NextLink}
