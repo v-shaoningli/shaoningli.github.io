@@ -155,6 +155,19 @@ const Home = () => (
         <PubSection>
           <Link
               as={NextLink}
+              href="https://openreview.net/pdf?id=9o6KQrklrE"
+              passHref
+              target="_blank"
+            >
+              Geometric Transformer with Interatomic Positional Encoding.
+            </Link>
+          </PubSection>
+          Yusong Wang*, <b>Shaoning Li</b>*, Tong Wang, Bin Shao, Nanning Zheng, Tie-Yan Liu
+          <br />
+          37th Conference on Neural Information Processing Systems <b>(NeurIPS 2023)</b>
+        <PubSection>
+          <Link
+              as={NextLink}
               href="https://www.biorxiv.org/content/10.1101/2023.07.12.548519v1"
               passHref
               target="_blank"
