@@ -138,6 +138,10 @@ const Home = () => (
           Bio
         </Heading>
         <BioSection>
+          <BioYear>2023.6 - Present</BioYear>
+          Algorithm Engineer, Biogeometry
+        </BioSection>
+        <BioSection>
           <BioYear>2019.8 - 2023.6</BioYear>
           Cyber Science and Technology, Beihang University
         </BioSection>
