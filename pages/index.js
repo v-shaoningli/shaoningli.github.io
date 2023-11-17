@@ -165,8 +165,9 @@ const Home = () => (
             >
               Geometric Transformer with Interatomic Positional Encoding.
             </Link>
-          </PubSection>
-          Yusong Wang*, <b>Shaoning Li</b>*, Tong Wang, Bin Shao, Nanning Zheng, Tie-Yan Liu
+          </PubSection>·
+          Yusong Wang*, <b>Shaoning Li</b>*, Tong Wang, Bin Shao, Nanning Zheng, Tie-Yan Liu. 
+          (* equal contribution)
           <br />
           37th Conference on Neural Information Processing Systems <b>(NeurIPS 2023)</b>
         <PubSection>
@@ -179,7 +180,7 @@ const Home = () => (
               AI2BMD: efficient characterization of protein dynamics with ab initio accuracy.
             </Link>
           </PubSection>
-          Tong Wang*, Xinheng He*, Mingyu Li*, Yusong Wang*, Zun Wang, <b>Shaoning Li</b>, Bin Shao, Tie-Yan Liu
+          Tong Wang*, Xinheng He*, Mingyu Li*, Yusong Wang*, Zun Wang, <b>Shaoning Li</b>, Bin Shao, Tie-Yan Liu.
           <PubSection>
           <Link
               as={NextLink}
@@ -187,11 +188,13 @@ const Home = () => (
               passHref
               target="_blank"
             >
-              ViSNet: a scalable and accurate geometric deep learning potential for molecular dynamics simulation.
+              Enhancing geometric representations for molecules with equivariant vector-scalar interactive message passing.
             </Link>
           </PubSection>
-          Yusong Wang*, <b>Shaoning Li*</b>, Xinheng He, Mingyu Li, Zun Wang, Nanning Zheng, Bin Shao, Tong Wang, Tie-Yan Liu.
+          Yusong Wang*, Tong Wang*, <b>Shaoning Li*</b>, Xinheng He, Mingyu Li, Zun Wang, Nanning Zheng, Bin Shao, Tie-Yan Liu.
           (* equal contribution)
+          <br />
+          Nature Communications <b>(Nature Comm 2023) Cover Story</b>.
           <PubSection>
           <Link
               as={NextLink}
