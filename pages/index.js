@@ -165,7 +165,7 @@ const Home = () => (
             >
               Geometric Transformer with Interatomic Positional Encoding.
             </Link>
-          </PubSection>·
+          </PubSection>
           Yusong Wang*, <b>Shaoning Li</b>*, Tong Wang, Bin Shao, Nanning Zheng, Tie-Yan Liu. 
           (* equal contribution)
           <br />
