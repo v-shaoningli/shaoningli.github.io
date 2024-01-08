@@ -301,6 +301,7 @@ const Home = () => (
               </Button>
             </Link>
           </ListItem>
+          Email: shaoningli5190 at gmail dot com
         </List>
 
         
