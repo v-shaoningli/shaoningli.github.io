@@ -184,7 +184,7 @@ const Home = () => (
           <PubSection>
           <Link
               as={NextLink}
-              href="https://arxiv.org/abs/2210.16518"
+              href="https://www.nature.com/articles/s41467-023-43720-2"
               passHref
               target="_blank"
             >
@@ -194,7 +194,7 @@ const Home = () => (
           Yusong Wang*, Tong Wang*, <b>Shaoning Li*</b>, Xinheng He, Mingyu Li, Zun Wang, Nanning Zheng, Bin Shao, Tie-Yan Liu.
           (* equal contribution)
           <br />
-          Nature Communications <b>(Nature Comm 2023) Cover Story</b>.
+          Nature Communications <b>(Nature Comm 2024) Cover Story</b>.
           <PubSection>
           <Link
               as={NextLink}
