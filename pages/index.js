@@ -191,7 +191,7 @@ const Home = () => (
               Enhancing geometric representations for molecules with equivariant vector-scalar interactive message passing.
             </Link>
           </PubSection>
-          Yusong Wang*, <b>Shaoning Li*</b>, Tong Wang, Xinheng He, Mingyu Li, Zun Wang, Nanning Zheng, Bin Shao, Tie-Yan Liu.
+          Yusong Wang*, <b>Shaoning Li*</b>, Xinheng He, Mingyu Li, Zun Wang, Nanning Zheng, Tong Wang, Bin Shao, Tie-Yan Liu.
           (* equal contribution)
           <br />
           Nature Communications <b>(Nature Comm 2024) Cover Story</b>.
