@@ -96,11 +96,11 @@ const Home = () => (
             {' '} supervised by Dr. {' '}
             <Link
               as={NextLink}
-              href="https://www.microsoft.com/en-us/research/people/watong/"
+              href="https://www.binshao.info/"
               passHref
               target="_blank"
             >
-              Tong Wang
+              Shao Bin
             </Link>
             .
             </Box>
@@ -166,7 +166,7 @@ const Home = () => (
               Geometric Transformer with Interatomic Positional Encoding.
             </Link>
           </PubSection>
-          Yusong Wang*, <b>Shaoning Li</b>*, Tong Wang, Bin Shao, Nanning Zheng, Tie-Yan Liu. 
+          Yusong Wang*, <b>Shaoning Li*</b>, Tong Wang, Bin Shao, Nanning Zheng, Tie-Yan Liu. 
           (* equal contribution)
           <br />
           37th Conference on Neural Information Processing Systems <b>(NeurIPS 2023)</b>
