@@ -100,7 +100,7 @@ const Home = () => (
               passHref
               target="_blank"
             >
-              Shao Bin
+              Bin Shao
             </Link>
             .
             </Box>
