@@ -171,7 +171,6 @@ const Home = () => (
           <br />
           12th International Conference on Learning Representations <b>(ICLR 2024)</b> GEM workshop
         <PubSection>
-        <PubSection>
           <Link
               as={NextLink}
               href="https://openreview.net/pdf?id=9o6KQrklrE"
