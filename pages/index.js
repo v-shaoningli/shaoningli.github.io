@@ -159,6 +159,21 @@ const Home = () => (
         <PubSection>
           <Link
               as={NextLink}
+              href="https://openreview.net/pdf?id=L2MDQ1q3f8"
+              passHref
+              target="_blank"
+            >
+              F3low: Frame-to-Frame Coarse-grained Molecular Dynamics with SE(3) Guided Flow Matching.
+            </Link>
+          </PubSection>
+          <b>Shaoning Li*</b>, Yusong Wang*, Mingyu Li*, Jian Zhang, Bin Shao, Nanning Zheng, Jian Tang. 
+          (* equal contribution)
+          <br />
+          12th International Conference on Learning Representations <b>(ICLR 2024)</b> GEM workshop
+        <PubSection>
+        <PubSection>
+          <Link
+              as={NextLink}
               href="https://openreview.net/pdf?id=9o6KQrklrE"
               passHref
               target="_blank"
